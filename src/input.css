@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+@theme{
+    /* Fonts */
+    --font-garamond:"EB Garamond",sans-serif;
+    --font-roboto:"Roboto", sans-serif;
+    --font-merriweather:"Merriweather", serif;
+
+    /* animations */
+    --animate-glow:"glow 1.5s ease-in-out infinite";
+    
+    @keyframes glow {
+        0%,
+        100%: { 
+        boxShadow: '0 0 10px rgba(99,102,241,0.5)' };
+    50%: 
+    { boxShadow: '0 0 20px rgba(99,102,241,1)' };
+        
+    }
+
+}
