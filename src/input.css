@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap&family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900');
+
+
+
 
 @import "tailwindcss";
 
@@ -8,7 +11,8 @@
     --font-garamond:"EB Garamond",sans-serif;
     --font-roboto:"Roboto", sans-serif;
     --font-merriweather:"Merriweather", serif;
-
+    --font-protest: "Protest Revolution", "sans-serif";
+4
     /* animations */
     --animate-glow:"glow 1.5s ease-in-out infinite";
     
@@ -20,5 +24,11 @@
     { boxShadow: '0 0 20px rgba(99,102,241,1)' };
         
     }
+
+    --animate-bounce-scale:bounce-scale 1s ease-in-out;
+  @keyframes bounce-scale {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
 
 }

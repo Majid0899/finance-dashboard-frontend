@@ -78,7 +78,8 @@ function renderTransactions() {
 
 // Delete Transaction
 function deleteTx(index) {
-  state.transactions.splice(index, 1);
+  let conf=confirm("Are you sure you want to delete")
+  if(conf) state.transactions.splice(index, 1);
   saveData();
   updateUI();
 }
